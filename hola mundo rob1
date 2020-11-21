@@ -1,0 +1,12 @@
+clear all
+close all
+clc
+%----------fi---d--a-alpha-%
+L1 = Link([0 2  0    0    0  0]);
+L2 = Link([0 2  2    pi/2   0  0]);
+
+
+
+scara= SerialLink ([L1 L2  ],'name','STANDAR');
+scara.plot([0 0 ])
+scara.teach
